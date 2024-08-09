@@ -1045,8 +1045,8 @@ input {
 
 
 .whatsapp-logo {
-  width: 50px; /* Width of the button */
-  height: 50px; /* Height of the button */
+  width: 60px; /* Width of the button */
+  height: 60px; /* Height of the button */
   background-color: #25D366; /* WhatsApp green color */
   color: white; /* Icon color */
   border-radius: 50%; /* Make it a circle */
