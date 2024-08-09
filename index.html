@@ -98,7 +98,7 @@
             <section class="about section" id="about">
                 <div class="about__container container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">More Information <br> About Ijen And Bromo</h2>
+                        <h2 class="section__title about__title">More Information <br> About Java And Bali</h2>
                         <p class="about__description">You can find the most beautiful and pleasant places at the best 
                             prices with special discounts, you choose the place we will guide you all the way to wait, get your 
                             place now.
@@ -208,23 +208,34 @@
                         pleasant places for you and your family.
                     </p>
 
-                    <div class="video__content">
-                        <iframe
-                        id="youtube-video"
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/eR41b6MNsdc"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-                    
-
-
-                        <!-- <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button> -->
+                    <div class="video__container container">
+                        <p class="video__description">Find out more with our video of the most beautiful and 
+                            pleasant places for you and your family.
+                        </p>
+    
+                        <div class="video__content">
+                            <div id="video-container" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+                                <iframe
+                                    id="youtube-video"
+                                    src="https://www.youtube.com/embed/eR41b6MNsdc"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                                ></iframe>
+                            </div>
+                        
+                            <video id="video-file" style="display: none; width: 100%; height: auto;">
+                                <!-- Empty video element for styling and dark mode purposes -->
+                            </video>
+                        
+                            <button class="button button--flex video__button" id="video-button">
+                                <!-- <i class="ri-play-line video__button-icon" id="video-icon"></i> -->
+                            </button>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </section>
