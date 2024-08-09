@@ -1042,3 +1042,31 @@ input {
     height: 640px;
   }
 }
+
+
+.whatsapp-logo {
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  background-color: #25D366; /* WhatsApp green color */
+  color: white; /* Icon color */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  position: fixed; /* Fixed position on the page */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.whatsapp-logo:hover {
+  background-color: #1EBEA5; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.whatsapp-logo i {
+  font-size: 24px; /* Icon size */
+}
+

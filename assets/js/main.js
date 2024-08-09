@@ -172,3 +172,12 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+function redirectToWhatsApp() {
+    var phoneNumber = '+6282132662815';  // Replace with your WhatsApp number
+  var message = 'Hello!';  // Replace with your default message
+  var encodedMessage = encodeURIComponent(message);
+  window.open('https://wa.me/' + phoneNumber + '?text=' + encodedMessage, '_blank');
+}
