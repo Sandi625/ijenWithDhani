@@ -1043,27 +1043,27 @@ input {
   }
 }
 
-
 .whatsapp-logo {
-  width: 60px; /* Width of the button */
-  height: 60px; /* Height of the button */
-  background-color: #25D366; /* WhatsApp green color */
+  width: 50px;
+  height: 50px;
+  background-color: #25D366; /* WhatsApp green */
   color: white; /* Icon color */
-  border-radius: 50%; /* Make it a circle */
+  border-radius: 50%; /* Circle shape */
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; /* Change cursor on hover */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-  position: fixed; /* Fixed position on the page */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: fixed; /* Fixed position so it stays in place */
   bottom: 20px; /* Distance from the bottom */
   right: 20px; /* Distance from the right */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+  z-index: 9999; /* Ensure it's on top of other elements */
 }
 
 .whatsapp-logo:hover {
-  background-color: #1EBEA5; /* Darker green on hover */
-  transform: scale(1.1); /* Slightly larger on hover */
+  background-color: #1EBEA5; /* Darker green */
+  transform: scale(1.1); /* Zoom effect */
 }
 
 .whatsapp-logo i {
