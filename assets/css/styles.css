@@ -557,16 +557,16 @@ input {
   position: relative;
 }
 
-/* .video__button {
+.video__button {
   position: absolute;
-  right: 1rem;
-  bottom: -1rem;
-  padding: 1rem 1.5rem;
+  right: 0;
+  bottom: 0;
+  padding: 0;
 }
 
 .video__button-icon {
-  font-size: 1.2rem;
-} */
+  font-size: 0;
+}
 
 /*=============== PLACES ===============*/
 .place__card, .place__img {
