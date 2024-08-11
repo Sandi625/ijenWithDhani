@@ -17,6 +17,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
         
+        
 
         <title>Website Travel With Dhani</title>
         
@@ -46,8 +47,8 @@
                         
                     </ul>
 
+                    <!-- Theme change button -->
                     <div class="nav__dark">
-                        <!-- Theme change button -->
                         <span class="change-theme-name">Dark mode</span>
                         <i class="ri-moon-line change-theme" id="theme-button"></i>
                     </div>
@@ -109,26 +110,29 @@
             <section class="about section" id="about">
                 <div class="about__container container grid">
                     <div class="about__data">
-                        <h2 class="section__title about__title">More Information <br> About Java And Bali</h2>
-                        <p class="about__description">You can find the most beautiful and pleasant places at the best 
-                            prices with special discounts, you choose the place we will guide you all the way to wait, get your 
-                            place now.
+                        <h2 class="section__title about__title">IJEN CRATER TOUR INDONESIA</h2>
+                        <p class="about__description">
+                            Ijen Crater Tour Indonesia is your trusted partner in planning an unforgettable vacation. We offer special services to help you explore your dream destination easily and comfortably. We’re committed to providing travel solutions tailored to your needs and preferences, whether for a family holiday, private trip, or backpacking adventure. We help you plan every detail of the trip, from tourist destinations to exciting local activities. Contact us to plan an unforgettable and fun trip!!
+                        </p>
+                        <p class="about__description">
+                            Tour Village !! Provide an immersive experience of the life and culture of a village. This tour combines natural exploration, interaction with local residents, and participation in traditional activities. Exploring a tour village is an ideal way to experience authentic village life, learn from local culture, and enjoy the beauty of nature while interacting directly with the local community.
                         </p>
                         <a href="#" class="button">Reserve a place</a>
                     </div>
-
+            
                     <div class="about__img">
                         <div class="about__img-overlay">
-                            <img src="assets/img/15.jpg" alt="" class="about__img-one">
+                            <img src="assets/img/15.jpg" alt="Ijen Crater" class="about__img-one">
                         </div>
-
+            
                         <div class="about__img-overlay">
-                            <img src="assets/img/bali.jpg" alt="" class="about__img-two">
+                            <img src="assets/img/bali.jpg" alt="Bali" class="about__img-two">
                         </div>
-                        
                     </div>
                 </div>
             </section>
+            
+            
             
             <!--==================== DISCOVER ====================-->
             <section class="discover section" id="discover">
@@ -176,6 +180,69 @@
                 </div>
             </section>
 
+             <!--==================== SHOP ====================-->
+
+             <!--==================== SHOP ====================-->
+             <section class="shop-section">
+                <div class="container">
+                  <h2 class="section-title">Our Products</h2>
+                  <p class="section-description">Discover our exclusive range of high-quality products, carefully curated to meet your needs and exceed your expectations. From stylish apparel to innovative gadgets, each item in our collection is designed to offer both functionality and flair. Explore our selection and find your next favorite product today!</p>
+                  <div class="shop">
+                    <div class="swiper-container shop-swiper-container">
+                      <div class="swiper-wrapper">
+                        <!-- Swiper Slide 1 -->
+                        <div class="swiper-slide">
+                          <div class="shop-card" style="width: 18rem;">
+                            <img src="assets/img/kupluk.jpeg" class="shop-card__img card-img-top" alt="Product image">
+                            <div class="shop-card__content card-body">
+                              <h5 class="shop-card__title card-title">Stylish Beanie</h5>
+                              <p class="shop-card__description">Keep warm and look cool with our premium beanie. Made from soft, high-quality fabric, this beanie is perfect for any season.</p>
+                              <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Swiper Slide 2 -->
+                        <div class="swiper-slide">
+                          <div class="shop-card" style="width: 18rem;">
+                            <img src="assets/img/kupluk.jpeg" class="shop-card__img card-img-top" alt="Product image">
+                            <div class="shop-card__content card-body">
+                              <h5 class="shop-card__title card-title">Classic Watch</h5>
+                              <p class="shop-card__description">Add a touch of elegance to your outfit with our classic watch. Featuring a timeless design and reliable movement, it's the perfect accessory for any occasion.</p>
+                              <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
+                            </div>
+                          </div>
+                        </div>
+                         <!-- Swiper Slide 2 -->
+                         <div class="swiper-slide">
+                            <div class="shop-card" style="width: 18rem;">
+                              <img src="assets/img/kupluk.jpeg" class="shop-card__img card-img-top" alt="Product image">
+                              <div class="shop-card__content card-body">
+                                <h5 class="shop-card__title card-title">Classic Watch</h5>
+                                <p class="shop-card__description">Add a touch of elegance to your outfit with our classic watch. Featuring a timeless design and reliable movement, it's the perfect accessory for any occasion.</p>
+                                <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- Add more slides as needed -->
+                      </div>
+                      <!-- Swiper Pagination -->
+                      <div class="swiper-pagination"></div>
+                      <!-- Swiper Navigation -->
+                      <!-- <div class="swiper-button-next"></div> -->
+                      <!-- <div class="swiper-button-prev"></div> -->
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              
+              
+              
+              
+              
+
+
+
             <!--==================== EXPERIENCE ====================-->
             <section class="experience section">
                 <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
@@ -219,10 +286,10 @@
                         pleasant places for you and your family.
                     </p>
 
-                    <div class="video__container container">
+                    <!-- <div class="video__container container">
                         <p class="video__description">Find out more with our video of the most beautiful and 
                             pleasant places for you and your family.
-                        </p>
+                        </p> -->
     
                         <div class="video__content">
                             <div id="video-container" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
@@ -254,119 +321,107 @@
 
             <!--==================== PLACES ====================-->
             <section class="place section" id="place">
-                <h2 class="section__title">Choose Your Place</h2>
+                <h2 class="section__title">Choose Your Trips</h2>
 
                 <div class="place__container container grid">
                     <!--==================== PLACES CARD 1 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/bali2.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">PRIVATE TOUR BALI</h3>
-                                <span class="place__subtitle">2 Day 1 Nights</span>
-                                <span class="place__price">Klik for more</span>
+                        <a href="page/bali.html" class="place__link">
+                            <img src="assets/img/bali2.jpg" alt="Bali" class="place__img">
+                
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">4,8</span>
+                                </span>
+                
+                                <div class="place__data">
+                                    <h3 class="place__title">PRIVATE TOUR BALI</h3>
+                                    <span class="place__subtitle">2 Day 1 Nights</span>
+                                    <span class="place__price">Klik for more</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
+                
+                            <button class="button button--flex place__button">
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </a>
                     </div>
-
+                
                     <!--==================== PLACES CARD 2 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/bromo.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">5,0</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">PRIVATE TOUR</h3>
-                                <span class="place__subtitle">MOUNT BROMO-IJEN CRATER, BLUE FIRE 3 Day 2 Night</span>
-                                <span class="place__price">Klik for more</span>
+                        <a href="page/bromo.html" class="place__link">
+                            <img src="assets/img/bromo.jpg" alt="Bromo" class="place__img">
+                
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">5,0</span>
+                                </span>
+                
+                                <div class="place__data">
+                                    <h3 class="place__title">PRIVATE TOUR</h3>
+                                    <span class="place__subtitle">MOUNT BROMO-IJEN-TUMPAK SEWU, BLUE FIRE 3 Day 2 Night</span>
+                                    <span class="place__price">Klik for more</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
+                
+                            <button class="button button--flex place__button">
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </a>
                     </div>
-
+                
                     <!--==================== PLACES CARD 3 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/15.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,9</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">PRIVATE IJEN CRATER </h3>
-                                <span class="place__subtitle">BLUE FIRE TOUR FROM BALI</span>
-                                <span class="place__price">Klik for more</span>
+                        <a href="page/djawatan-pulaumerah.html" class="place__link">
+                            <img src="assets/img/djawatan3.jpg" alt="Ijen Crater" class="place__img">
+                
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">4,9</span>
+                                </span>
+                
+                                <div class="place__data">
+                                    <h3 class="place__title">EXPLORE DJAWATAN & PANTAI PULAU MERAH</h3>
+                                    <span class="place__subtitle">1 Day explore Banyuwangi</span>
+                                    <span class="place__price">Klik for more</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
+                
+                            <button class="button button--flex place__button">
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </a>
                     </div>
 
-                    <!--==================== PLACES CARD 4 ====================-->
-                    <!-- <div class="place__card">
-                        <img src="assets/img/place4.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
-                            </span>
 
-                            <div class="place__data">
-                                <h3 class="place__title">Whitehaven</h3>
-                                <span class="place__subtitle">Australia</span>
-                                <span class="place__price">$2499</span>
+                     <!--==================== PLACES CARD 4 ====================-->
+                     <div class="place__card">
+                        <a href="page/baluran-tabuhan.html" class="place__link">
+                            <img src="assets/img/baluran2.jpg" alt="Ijen Crater" class="place__img">
+                
+                            <div class="place__content">
+                                <span class="place__rating">
+                                    <i class="ri-star-line place__rating-icon"></i>
+                                    <span class="place__rating-number">4,9</span>
+                                </span>
+                
+                                <div class="place__data">
+                                    <h3 class="place__title">EXPLORE TAMAN NASIONAL BALURAN & PULAU TABUHAN</h3>
+                                    <span class="place__subtitle">1 Day explore Banyuwangi</span>
+                                    <span class="place__price">Klik for more</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div> -->
-
-                    <!--==================== PLACES CARD 5 ====================-->
-                    <!-- <div class="place__card">
-                        <img src="assets/img/place5.jpg" alt="" class="place__img">
-                        
-                        <div class="place__content">
-                            <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4,8</span>
-                            </span>
-
-                            <div class="place__data">
-                                <h3 class="place__title">Hvar</h3>
-                                <span class="place__subtitle">Croacia</span>
-                                <span class="place__price">$1999</span>
-                            </div>
-                        </div>
-
-                        <button class="button button--flex place__button">
-                            <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </div> -->
+                
+                            <button class="button button--flex place__button">
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
+                
             </section>
 
             <!--==================== SUBSCRIBE ====================-->

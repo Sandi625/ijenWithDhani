@@ -181,3 +181,26 @@ function redirectToWhatsApp() {
   var encodedMessage = encodeURIComponent(message);
   window.open('https://wa.me/' + phoneNumber + '?text=' + encodedMessage, '_blank');
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var shopSwiper = new Swiper('.shop-swiper-container', {
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.shop-swiper-container .swiper-button-next',
+        prevEl: '.shop-swiper-container .swiper-button-prev',
+      },
+      pagination: {
+        el: '.shop-swiper-container .swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 1, // Adjust this based on your needs
+      centeredSlides: true,
+    });
+  });
+
+
+  
+  

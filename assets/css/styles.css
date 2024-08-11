@@ -58,6 +58,32 @@
   --img-scale: scale(1.1);
 }
 
+/* Variables for Light Mode */
+:root {
+  --section-bg-color: #ffffff;
+  --title-color: #07412a;
+  --description-color: #333333;
+  --card-bg-color: #f9f9f9;
+  --card-border-color: #e0e0e0;
+  --card-border-radius: 0.25rem;
+  --card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --card-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme {
+  --section-bg-color: #121212;
+  --title-color: #ffffff;
+  --description-color: #cccccc;
+  --card-bg-color: #1e1e1e;
+  --card-border-color: #333333;
+  --title-color-dark: #ffffff;
+  --description-color-dark: #ffffff;
+  --card-bg-color-dark: #1e1e1e;
+  --card-border-color-dark: #333333;
+}
+
+
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 4rem;
@@ -1070,3 +1096,155 @@ input {
   font-size: 24px; /* Icon size */
 }
 
+
+
+.place__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.place__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Section styling */
+/* Assuming the Shop section has a class of .shop */
+.shop {
+  padding: var(--section-padding); /* Use consistent padding */
+  background-color: var(--body-color); /* Consistent background color */
+  color: var(--text-color); /* Consistent text color */
+}
+
+.shop__title {
+  font-size: var(--h2-font-size); /* Consistent font size */
+  color: var(--title-color); /* Consistent title color */
+  margin-bottom: var(--mb-2); /* Consistent margin */
+  text-align: center; /* Align text like other sections */
+}
+
+.shop__items {
+  display: grid; /* Use grid layout if other sections use it */
+  gap: var(--mb-1); /* Use consistent gap between items */
+  justify-content: center; /* Center items like other sections */
+}
+
+.shop__item {
+  background-color: var(--input-color); /* Use consistent background color */
+  color: var(--text-color); /* Consistent text color */
+  padding: var(--mb-1); /* Use consistent padding */
+  border-radius: .5rem; /* Rounded corners like other items */
+  transition: transform 0.3s; /* Smooth transition like other elements */
+}
+
+.shop__item:hover {
+  transform: scale(1.05); /* Example of hover effect */
+}
+
+/* Ensure responsiveness */
+@media screen and (max-width: 768px) {
+  .shop__items {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  }
+}
+
+/* Scoped Swiper Styles */
+.shop-swiper-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.shop-swiper-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-swiper-container .shop__card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-swiper-container .shop__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation and Pagination styling */
+.shop-swiper-container .swiper-button-next,
+.shop-swiper-container .swiper-button-prev {
+  color: #333;
+}
+
+.shop-swiper-container .swiper-pagination-bullet {
+  background: #333;
+}
+
+
+:root {
+  /* Light mode colors */
+  --section-bg-color: #ffffff;
+  --title-color: #07412a;
+  --description-color: #333333;
+  --card-bg-color: #f9f9f9;
+  --card-border-color: #e0e0e0;
+  --card-border-radius: 0.25rem;
+  --card-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --card-hover-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --card-title-font-size: 1.25rem;
+  --card-title-font-weight: bold;
+  --card-title-margin-bottom: 0.5rem;
+  --card-description-font-size: 0.875rem;
+  --card-description-line-height: 1.5;
+  --card-padding: 1rem;
+  --shop-card-title-color: var(--title-color);
+  --shop-card-description-color: var(--description-color);
+}
+
+body.dark-theme {
+  /* Dark mode colors */
+  --section-bg-color: #ffffff;
+  --title-color: #ffffff;
+  --description-color: #ffffff;
+  --card-bg-color: #082a2b; /* Dark teal color */
+  --card-border-color: #333333;
+  --card-title-font-size: 1.25rem;
+  --card-title-font-weight: bold;
+  --card-title-margin-bottom: 0.5rem;
+  --card-description-font-size: 0.875rem;
+  --card-description-line-height: 1.5;
+  --card-padding: 1rem;
+  --shop-card-title-color: var(--title-color);
+  --shop-card-description-color: var(--description-color);
+}
+
+.shop-card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-box-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.shop-card:hover {
+  box-shadow: var(--card-hover-box-shadow);
+}
+
+.shop-card__title {
+  font-size: var(--card-title-font-size);
+  font-weight: var(--card-title-font-weight);
+  color: var(--shop-card-title-color);
+  margin-bottom: var(--card-title-margin-bottom);
+}
+
+.shop-card__description {
+  font-size: var(--card-description-font-size);
+  color: var(--shop-card-description-color);
+  line-height: var(--card-description-line-height);
+}
