@@ -149,7 +149,7 @@ body {
 }
 
 header {
-    background: #14505c;
+    background: #082a2b;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -167,7 +167,7 @@ header h1 {
 }
 
 .hero {
-    background: url('../assets/img/ijenbaru2.JPG') no-repeat center center/cover;
+    background: url('../assets/img/sulfur.jpg') no-repeat center center/cover;
     height: 300px;
     display: flex;
     align-items: center;
