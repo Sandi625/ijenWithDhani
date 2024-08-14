@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="galeri.css">
+    <link rel="stylesheet" href="https://unpkg.com/remixicon/fonts/remixicon.css">
+
+    <!-- <link rel="stylesheet" href="bali.css"> -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the Gallery</h1>
+        <!-- <h2>2 Day 1 Night</h2> -->
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__logo">BrandLogo</div>
+        <div class="nav__toggle" id="nav-toggle">&#9776;</div>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item"><a href="../index.html" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="../index.html#discover" class="nav__link">Destination</a></li>
+            <li class="nav__item"><a href="../index.html#place" class="nav__link">Tours</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+            <div class="nav__close" id="nav-close">&times;</div>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="main">
+        <!-- Gallery Options -->
+        <section class="section">
+            <h2 class="section__title">Gallery</h2>
+            <div class="gallery-options">
+                <button onclick="showImages()">Images</button>
+                <button onclick="showVideos()">Videos</button>
+            </div>
+        </section>
+
+        <!-- Gallery Images -->
+        <section class="gallery-container">
+            <div class="discover__card">
+                <img src="../assets/img/10.jpg" alt="Gallery Image 1" class="discover__img">
+                <div class="discover__data">
+                    <h3 class="discover__title">Image Title 1</h3>
+                    <span class="discover__description">Image Description 1</span>
+                </div>
+            </div>
+            <div class="discover__card">
+                <img src="../assets/img/10qq.jpg" alt="Gallery Image 2" class="discover__img">
+                <div class="discover__data">
+                    <h3 class="discover__title">Image Title 2</h3>
+                    <span class="discover__description">Image Description 2</span>
+                </div>
+            </div>
+            <div class="discover__card">
+                <img src="../assets/img/11qq.jpg" alt="Gallery Image 3" class="discover__img">
+                <div class="discover__data">
+                    <h3 class="discover__title">Image Title 3</h3>
+                    <span class="discover__description">Image Description 3</span>
+                </div>
+            </div>
+            <div class="discover__card">
+                <img src="../assets/img/10.jpg" alt="Gallery Image 4" class="discover__img">
+                <div class="discover__data">
+                    <h3 class="discover__title">Image Title 4</h3>
+                    <span class="discover__description">Image Description 4</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2 class="section__title">Featured Videos</h2>
+            <div class="container video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video 1" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video 2" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video 3" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="YouTube video 4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Travel</h3>
+                    <p class="footer__description">Travel you choose the <br> destination, we offer you the <br> experience.</p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item"><a href="" class="footer__link">About Us</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Features</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">New & Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item"><a href="" class="footer__link">Team</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Plan & Pricing</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Become a member</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item"><a href="" class="footer__link">FAQs</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Support Center</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2021 Bedimcode. All rights reserved.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="bali.js"></script>
+    <script>
+        // Menu toggle functionality
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        // Hide menu on link click (optional)
+        const navLink = document.querySelectorAll('.nav__link');
+        navLink.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        });
+
+        // Toggle between images and videos
+        function showImages() {
+            document.querySelector('.gallery-container').style.display = 'grid';
+            document.querySelector('.video-section').style.display = 'none';
+        }
+
+        function showVideos() {
+            document.querySelector('.gallery-container').style.display = 'none';
+            document.querySelector('.video-section').style.display = 'block';
+        }
+
+        // Default to showing images on page load
+        showImages();
+    </script>
+</body>
+</html>
