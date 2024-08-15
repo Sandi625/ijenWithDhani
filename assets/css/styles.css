@@ -229,14 +229,27 @@ input {
   justify-content: space-between;
   align-items: center;
 }
-
+/* Existing styles */
 .nav__logo, .nav__toggle {
   color: var(--white-color);
 }
 
 .nav__logo {
   font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  margin-right: auto; /* Menempatkan logo di kiri dengan margin otomatis di kanan */
 }
+
+.nav__logo img {
+  margin-left: -20px;
+  align-items: start;
+  max-width: 50px; /* Atur lebar maksimum sesuai kebutuhan */
+  height: auto; /* Pertahankan rasio aspek gambar */
+}
+
+
 
 .nav__toggle {
   font-size: 1.2rem;
