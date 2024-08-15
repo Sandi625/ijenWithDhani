@@ -1261,3 +1261,31 @@ body.dark-theme {
   color: var(--shop-card-description-color);
   line-height: var(--card-description-line-height);
 }
+
+
+.maps-container {
+  padding: var(--mb-2) var(--mb-1); /* Sesuaikan dengan padding section lain */
+  margin: var(--mb-1);
+}
+
+
+.maps-container {
+  display: grid; /* Atau flex, sesuai kebutuhan */
+  grid-template-columns: 1fr; /* Sesuaikan dengan grid yang ada */
+  justify-items: center; /* Atau justify-content, sesuai dengan kebutuhan */
+}
+
+.maps-container {
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+}
+
+.maps-container {
+  background-color: var(--section-bg-color);
+}
+
+@media screen and (max-width: 768px) {
+  .maps-container {
+    padding: var(--mb-1);
+  }
+}
