@@ -18,7 +18,9 @@
 
     <!-- Navigation -->
     <nav class="nav">
-        <div class="nav__logo">BrandLogo</div>
+        <div class="nav__logo">
+            <img src="../assets/img/logo.jpg" alt="Brand Logo" style="height: 40px;">
+        </div>
         <div class="nav__toggle" id="nav-toggle">&#9776;</div>
         <ul class="nav__menu" id="nav-menu">
             <li class="nav__item"><a href="../index.html" class="nav__link active-link">Home</a></li>
@@ -29,6 +31,7 @@
             <div class="nav__close" id="nav-close">&times;</div>
         </ul>
     </nav>
+    
 
     <!-- Main Section -->
     <main class="main">
@@ -44,112 +47,20 @@
         <!-- Gallery Images -->
         <section class="gallery-container">
             <div class="discover__card">
-                <img src="../assets/img/10.jpg" alt="Gallery Image 1" class="discover__img">
+                <img id="myImg" src="../assets/img/10.jpg" alt="Snow" style="width:100%;max-width:300px">
                 <div class="discover__data">
-                    <h3 class="discover__title">Image Title 1</h3>
-                    <span class="discover__description">Image Description 1</span>
+                    <h3 class="discover__title">Snow</h3>
+                    <span class="discover__description">A beautiful snowy landscape.</span>
                 </div>
             </div>
-            <div class="discover__card">
-                <img src="../assets/img/ijenbaru2.JPG" alt="Gallery Image 2" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 2</h3>
-                    <span class="discover__description">Image Description 2</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule1.jpg" alt="Gallery Image 3" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 3</h3>
-                    <span class="discover__description">Image Description 3</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule2.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule3.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule4.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule5.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule6.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule7.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule8.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule9.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule10.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule11.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule12.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
-            <div class="discover__card">
-                <img src="../assets/img/bule13.jpg" alt="Gallery Image 4" class="discover__img">
-                <div class="discover__data">
-                    <h3 class="discover__title">Image Title 4</h3>
-                    <span class="discover__description">Image Description 4</span>
-                </div>
-            </div>
+            <!-- Add more images here -->
         </section>
 
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
         <!-- Video Section -->
        <!-- Video Section -->
 <section class="video-section">
@@ -231,16 +142,18 @@
                     <h3 class="footer__title">Travel</h3>
                     <p class="footer__description">Travel you choose the <br> destination, we offer you the <br> experience.</p>
                     <div>
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                        <a href="https://www.facebook.com/profile.php?id=100090053510077" target="_blank"
+                            class="footer__social">
                             <i class="ri-facebook-box-fill"></i>
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__social">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                        <!-- <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a> -->
+                        <a href="https://www.instagram.com/ijencratertour.indonesia/" target="_blank"
+                            class="footer__social">
                             <i class="ri-instagram-fill"></i>
                         </a>
-                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                        <a href="https://www.youtube.com/@E__AHMADDHANIIRJA" target="_blank" class="footer__social">
                             <i class="ri-youtube-fill"></i>
                         </a>
                     </div>
@@ -349,15 +262,28 @@ function playPause(){
 
     }
 }
-videoButton.addEventListener('click', playPause)
 
-function finalVideo(){
-    // Video ends, icon change
-    videoIcon.classList.remove('ri-pause-line')
-    videoIcon.classList.add('ri-play-line')
+
+
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
 }
-// ended, when the video ends
-videoFile.addEventListener('ended', finalVideo)
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
 
 
 
