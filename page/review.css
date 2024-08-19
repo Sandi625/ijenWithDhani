@@ -415,3 +415,9 @@ section:last-of-type {
     max-height: 70vh; /* Sesuaikan tinggi sesuai kebutuhan */
     overflow-y: auto;
 }
+
+
+/* Hide pagination bullets */
+.swiper-pagination {
+    display: none;
+}
