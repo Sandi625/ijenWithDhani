@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Ijen Crater - Blue Fire Tour from Bali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="review.css">
+    <style>
+        /* Add CSS for thicker horizontal lines between sections */
+        section {
+            padding: 20px 0;
+            border-bottom: 3px solid #000000; /* Adjust the thickness of the line here */
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Review From Clients</h1>
+        <h2></h2>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="../assets/img/logo.jpg" alt="Brand Logo" style="height: 40px;">
+        </div>
+        <div class="nav__toggle" id="nav-toggle">&#9776;</div>
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item"><a href="../index.html" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="../index.html#discover" class="nav__link">Destination</a></li>
+            <li class="nav__item"><a href="../index.html#place" class="nav__link">Tours</a></li>
+            <li class="nav__item"><a href="../page/galeri.html" class="nav__link">Gallery</a></li>
+            <li class="nav__item"><a href="../page/review.html" class="nav__link">Review</a></li>
+            <div class="nav__close" id="nav-close">&times;</div>
+        </ul>
+    </nav>
+
+  
+    <section id="testimonial" class="testimonial-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="../assets/img/IMG_3907.JPG" alt="John Doe">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"This tour was absolutely amazing! The guide was knowledgeable and the experience was unforgettable. Highly recommend!"</p>
+                            <h3>- John Doe</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="../assets/img/HONEY.jpg" alt="Jane Smith">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The Blue Fire was stunning. The whole trip was well organized and we felt very safe throughout the journey."</p>
+                            <h3>- Jane Smith</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="../assets/img/bule3.jpg" alt="Mark Wilson">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"A once in a lifetime experience! Everything was perfect from start to finish. Thank you for making our trip so special!"</p>
+                            <h3>- Mark Wilson</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="../assets/img/27qq.jpg" alt="Mark Wilson">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"A once in a lifetime experience! Everything was perfect from start to finish. Thank you for making our trip so special!"</p>
+                            <h3>- Mark Wilson</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="../assets/img/bule1.jpg" alt="Mark Wilson">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"A once in a lifetime experience! Everything was perfect from start to finish. Thank you for making our trip so special!"</p>
+                            <h3>- Mark Wilson</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            }
+        });
+    </script>
+    
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <!-- Add Custom Styles -->
+    <style>
+        .testimonial-section {
+            padding: 20px 0;
+            background-color: #f9f9f9;
+        }
+    
+        .testimonial-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    
+        .testimonial-image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #ddd;
+        }
+    
+        .testimonial-content p {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    
+        .testimonial-content h3 {
+            font-size: 1.2em;
+            color: #555;
+        }
+    
+        .swiper-container {
+            padding: 20px 0;
+        }
+    </style>
+    
+    
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            }
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    }
+});
+
+    </script>
+    
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <!-- Add Custom Styles -->
+    <style>
+        .testimonial-section {
+            padding: 20px 0;
+            background-color: #f9f9f9;
+        }
+    
+        .testimonial-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .testimonial-content {
+            text-align: center;
+        }
+    
+        .testimonial-content p {
+            font-style: italic;
+            color: #333;
+        }
+    
+        .testimonial-content h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #555;
+        }
+    
+        .swiper-container {
+            padding: 20px 0;
+        }
+    </style>
+    
+  
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Travel</h3>
+                    <p class="footer__description">Travel you choose the <br> destination, 
+                        we offer you the <br> experience.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100090053510077" target="_blank"
+                            class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <!-- <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a> -->
+                        <a href="https://www.instagram.com/ijencratertour.indonesia/" target="_blank"
+                            class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@E__AHMADDHANIIRJA" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Features</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">New & Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#"><i class="fas fa-phone"></i>+6282331489128</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"><i class="fas fa-envelope"></i>Ijencratertour.indonesia@gmail.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"><i class="fas fa-map"></i> Licin, Banyuwangi - 68464</a>
+                        </li>
+                        <!-- <li class="footer__item">
+                            <a href="#" class="footer__link">Team</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Plan & Pricing</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Become a member</a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="bali.js"></script>
+
+    <script>// Menangani menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navClose = document.getElementById('nav-close');
+        
+        // Menampilkan menu saat tombol toggle diklik
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+        
+        // Menyembunyikan menu saat tombol close diklik
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+        
+        // Menyembunyikan menu saat link di-klik (opsional)
+        const navLink = document.querySelectorAll('.nav__link');
+        navLink.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        });
+        </script>
+
+</body>
+
+</html>
