@@ -73,7 +73,7 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home" id="home">
-            <img src="assets/img/nusa_penida.jpg" alt="" class="home__img">
+            <img src="assets/img/1ijen.JPG" alt="" class="home__img">
 
             <div class="home__container container grid">
                 <div class="home__data">
@@ -210,10 +210,13 @@
 
                             <div class="swiper-slide">
                                 <div class="shop-card" style="width: 18rem;">
-                                    <img src="assets/img/jkl laguna.jpg" class="shop-card__img card-img-top" alt="Product image">
+                                    <img src="assets/img/jkl laguna.jpg" class="shop-card__img card-img-top"
+                                        alt="Product image">
                                     <div class="shop-card__content card-body">
                                         <h5 class="shop-card__title card-title">Mountain Jacket</h5>
-                                        <p class="shop-card__description">Stay warm and protected with our mountain jacket. Featuring a weather-resistant design, it’s ideal for rugged outdoor adventures.</p>
+                                        <p class="shop-card__description">Stay warm and protected with our mountain
+                                            jacket. Featuring a weather-resistant design, it’s ideal for rugged outdoor
+                                            adventures.</p>
                                         <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
@@ -221,10 +224,13 @@
 
                             <div class="swiper-slide">
                                 <div class="shop-card" style="width: 18rem;">
-                                    <img src="assets/img/kupluk.jpeg" class="shop-card__img card-img-top" alt="Product image">
+                                    <img src="assets/img/kupluk.jpeg" class="shop-card__img card-img-top"
+                                        alt="Product image">
                                     <div class="shop-card__content card-body">
                                         <h5 class="shop-card__title card-title">Stylish Beanie</h5>
-                                        <p class="shop-card__description">Keep warm and look stylish with our premium beanie. Made from soft, high-quality fabric, this beanie is perfect for any season.</p>
+                                        <p class="shop-card__description">Keep warm and look stylish with our premium
+                                            beanie. Made from soft, high-quality fabric, this beanie is perfect for any
+                                            season.</p>
                                         <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
@@ -232,23 +238,29 @@
                             <!-- Swiper Slide 2 -->
                             <div class="swiper-slide">
                                 <div class="shop-card" style="width: 18rem;">
-                                    <img src="assets/img/lutek.png" class="shop-card__img card-img-top" alt="Product image">
+                                    <img src="assets/img/lutek.png" class="shop-card__img card-img-top"
+                                        alt="Product image">
                                     <div class="shop-card__content card-body">
                                         <h5 class="shop-card__title card-title">Hiking Stick</h5>
-                                        <p class="shop-card__description">Enhance your hiking experience with our durable hiking stick. Designed for comfort and support, it’s perfect for any trail.</p>
+                                        <p class="shop-card__description">Enhance your hiking experience with our
+                                            durable hiking stick. Designed for comfort and support, it’s perfect for any
+                                            trail.</p>
                                         <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Swiper Slide 3 -->
-                           
+
                             <!-- Swiper Slide 4 -->
                             <div class="swiper-slide">
                                 <div class="shop-card" style="width: 18rem;">
-                                    <img src="assets/img/download.jpeg" class="shop-card__img card-img-top" alt="Product image">
+                                    <img src="assets/img/download.jpeg" class="shop-card__img card-img-top"
+                                        alt="Product image">
                                     <div class="shop-card__content card-body">
                                         <h5 class="shop-card__title card-title">Gas Mask</h5>
-                                        <p class="shop-card__description">Stay safe in challenging environments with our high-quality gas mask. Designed for protection and comfort, it’s essential for any serious adventurer.</p>
+                                        <p class="shop-card__description">Stay safe in challenging environments with our
+                                            high-quality gas mask. Designed for protection and comfort, it’s essential
+                                            for any serious adventurer.</p>
                                         <a href="#" class="shop-card__button btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
@@ -261,7 +273,7 @@
                         <!-- <div class="swiper-button-next"></div> -->
                         <!-- <div class="swiper-button-prev"></div> -->
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -322,30 +334,66 @@
                             pleasant places for you and your family.
                         </p> -->
 
-                <div class="video__content">
-                    <div id="video-container"
-                        style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-                        <iframe id="youtube-video" src="https://www.youtube.com/embed/eR41b6MNsdc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
-                    </div>
+             <div class="video__content">
+    <div id="video-container"
+        style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
 
-                    <video id="video-file" style="display: none; width: 100%; height: auto;">
-                        <!-- Empty video element for styling and dark mode purposes -->
-                    </video>
+        <!-- IFRAME (akan disembunyikan jika error) -->
+        <iframe id="youtube-video"
+            src="https://www.youtube.com/embed/BFp5pZwccAE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+        </iframe>
 
-                    <button class="button button--flex video__button" id="video-button">
-                        <!-- <i class="ri-play-line video__button-icon" id="video-icon"></i> -->
-                    </button>
+        <!-- Thumbnail fallback -->
+        <a id="video-fallback" href="https://youtu.be/BFp5pZwccAE" target="_blank"
+            style="display:none; position:absolute; inset:0;">
+            <img src="https://img.youtube.com/vi/BFp5pZwccAE/maxresdefault.jpg"
+                 style="width:100%; height:100%; object-fit:cover;">
+            <div style="
+                position:absolute; top:50%; left:50%;
+                transform:translate(-50%,-50%);
+                width:90px; height:90px;
+                border-radius:50%;
+                background:rgba(0,0,0,0.6);
+                display:flex; align-items:center; justify-content:center;
+                font-size:60px; color:white;">
+                ▶
+            </div>
+        </a>
+    </div>
 
-                </div>
+    <video id="video-file" style="display: none; width: 100%; height: auto;"></video>
+
+    <button class="button button--flex video__button" id="video-button"></button>
+</div>
+
 
 
             </div>
             </div>
         </section>
+
+        <script>
+const iframe = document.getElementById('youtube-video');
+const fallback = document.getElementById('video-fallback');
+
+// Jika iframe gagal load → tampilkan thumbnail
+setTimeout(() => {
+    try {
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        if (!iframeDoc || iframeDoc.body.innerHTML.includes('Error')) {
+            throw 'Blocked';
+        }
+    } catch (e) {
+        iframe.style.display = 'none';
+        fallback.style.display = 'block';
+    }
+}, 1200);
+</script>
+
 
         <!--==================== PLACES ====================-->
         <section class="place section" id="place">
@@ -451,8 +499,8 @@
                 </div>
 
 
-                 <!--==================== PLACES CARD 5 ====================-->
-                 <div class="place__card">
+                <!--==================== PLACES CARD 5 ====================-->
+                <div class="place__card">
                     <a href="page/village.html" class="place__link">
                         <img src="assets/img/bule5.jpg" alt="Ijen Crater" class="place__img">
 
@@ -518,7 +566,7 @@
                 </div>
             </div>
         </section>
-       
+
 
         <!--==================== MAPS ====================-->
         <section class="maps section">
@@ -532,7 +580,7 @@
                 </div>
             </div>
         </section>
-        
+
 
     </main>
 
@@ -582,11 +630,11 @@
                     <h3 class="footer__subtitle">Contact</h3>
                     <ul>
                         <li class="footer__item">
-                            <a href="tel:+6282132662815">
-                                <i class="fas fa-phone"></i> +6282132662815
+                            <a href="tel:+628133326201">
+                                <i class="fas fa-phone"></i> +628133326201
                             </a>
                         </li>
-                        <li class="footer__item">
+                        <!-- <li class="footer__item">
                             <a href="tel:+6282331489128">
                                 <i class="fas fa-phone"></i> +6282331489128
                             </a>
@@ -595,7 +643,7 @@
                             <a href="tel:+6281381117555">
                                 <i class="fas fa-phone"></i> +6281381117555
                             </a>
-                        </li>
+                        </li> -->
                         <li class="footer__item">
                             <a href="#"><i class="fas fa-envelope"></i>Ijencratertour.indonesia@gmail.com</a>
                         </li>
